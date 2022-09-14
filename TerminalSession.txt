@@ -48,8 +48,8 @@ Mode                 LastWriteTime         Length Name
 
 PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> mv .\myfile_copy.txt myfile2.txt
 PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> 
-PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> mv .\myfile2.txt ../~
-PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> ls ~
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> mv .\myfile2.txt ..
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> ls ..
 
     Directory: C:\Users\epico
 
@@ -84,7 +84,7 @@ d-r---        2022-09-07  10:05 PM                Videos
 PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> cd..
 PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> rm .\CLIBasicsFolder\myfile.txt
 PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> rmdir .\CLIBasicsFolder\
-PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> ls ~
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> ls ..
 
     Directory: C:\Users\epico
 
