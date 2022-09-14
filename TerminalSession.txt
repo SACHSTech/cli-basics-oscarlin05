@@ -1,1 +1,115 @@
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> pwd       
+Path
+----
+C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05
 
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> mkdir CLIBasicsFolder
+    Directory: C:\Users\epico\github-classroom\SACHSTech
+    4U\cli-basics-oscarlin05
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2022-09-13   5:58 PM                CLIBasicsFolder
+
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> ls        
+
+    Directory: C:\Users\epico\github-classroom\SACHSTech
+    4U\cli-basics-oscarlin05
+----                 -------------         ------ ----
+d-----        2022-09-12  10:12 PM                .github
+d-----        2022-09-13   5:58 PM                CLIBasicsFolder
+-a----        2022-09-12  10:12 PM           1289 README.md
+-a----        2022-09-12  10:12 PM              2 TerminalSession.txt
+
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> cd .\CLIBasicsFolder\
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> New-Item -Path . -Name "myfile.txt" -ItemType "file"
+
+    Directory: C:\Users\epico\github-classroom\SACHSTech
+    4U\cli-basics-oscarlin05\CLIBasicsFolder
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2022-09-13   6:00 PM              0 myfile.txt
+
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> echo Oscar ICS4Ub >> .\myfile.txt
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> cat .\myfile.txt
+Oscar
+ICS4Ub
+
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> cp .\myfile.txt myfile_copy.txt
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> ls 
+
+    Directory: C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2022-09-13   6:01 PM             32 myfile.txt
+-a----        2022-09-13   6:01 PM             32 myfile_copy.txt
+
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> mv .\myfile_copy.txt myfile2.txt
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> 
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> mv .\myfile2.txt ..
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> ls ..
+
+    Directory: C:\Users\epico
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2022-02-23  10:19 PM                .cache
+d-----        2020-10-14   6:28 PM                .config
+d-----        2022-03-07   6:28 PM                .m2
+d-----        2020-01-21   6:41 PM                .openshot_qt
+d-----        2021-07-18  10:39 PM                .pylint.d
+d-----        2020-03-22   1:57 PM                .thumbnails
+d-----        2020-10-14   6:22 PM                .vscode
+d-r---        2022-07-21   7:55 PM                3D Objects
+d-----        2020-01-15   7:33 PM                ansel
+d-r---        2022-07-21   7:55 PM                Contacts
+d-----        2020-06-24   1:29 PM                Creative Cloud Files
+d-r---        2022-09-10  10:24 PM                Desktop
+d-r---        2022-07-21   7:55 PM                Documents
+d-r---        2022-09-12   8:59 PM                Downloads
+d-r---        2022-07-21   7:55 PM                Favorites
+d-----        2022-09-12  10:12 PM                github-classroom
+d-r---        2022-07-21   7:55 PM                Links
+d-r---        2022-07-21   7:55 PM                Music
+dar--l        2021-08-08   9:12 PM                OneDrive
+d-r---        2022-07-21   7:55 PM                Pictures
+d-r---        2022-07-21   7:55 PM                Saved Games
+d-r---        2022-07-21   7:55 PM                Searches
+d-r---        2022-09-07  10:05 PM                Videos
+-a----        2021-07-31   6:53 PM            185 .gitconfig
+-a----        2021-06-18  10:39 AM           7323 AMDRM_Install.log
+-a----        2020-01-15   9:16 PM        2843892 AMD_RyzenMaster.log
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05\CLIBasicsFolder> cd..
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> rm .\CLIBasicsFolder\myfile.txt
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> rmdir .\CLIBasicsFolder\
+PS C:\Users\epico\github-classroom\SACHSTech 4U\cli-basics-oscarlin05> ls ..
+
+    Directory: C:\Users\epico
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2022-02-23  10:19 PM                .cache
+d-----        2020-10-14   6:28 PM                .config
+d-----        2020-01-21   6:41 PM                .openshot_qt
+d-----        2021-07-18  10:39 PM                .pylint.d
+d-----        2020-03-22   1:57 PM                .thumbnails
+d-----        2020-10-14   6:22 PM                .vscode
+d-r---        2022-07-21   7:55 PM                3D Objects
+d-----        2020-01-15   7:33 PM                ansel
+d-r---        2022-07-21   7:55 PM                Contacts
+d-r---        2022-09-10  10:24 PM                Desktop
+d-r---        2022-07-21   7:55 PM                Documents
+d-r---        2022-09-12   8:59 PM                Downloads
+d-r---        2022-07-21   7:55 PM                Favorites
+d-----        2022-09-12  10:12 PM                github-classroom
+d-r---        2022-07-21   7:55 PM                Links
+d-r---        2022-07-21   7:55 PM                Music
+d-r---        2022-07-21   7:55 PM                Pictures
+d-r---        2022-07-21   7:55 PM                Saved Games
+d-r---        2022-07-21   7:55 PM                Searches
+d-r---        2022-09-07  10:05 PM                Videos
+-a----        2021-07-31   6:53 PM            185 .gitconfig
+-a----        2021-06-18  10:39 AM           7323 AMDRM_Install.log
+-a----        2020-01-15   9:16 PM        2843892 AMD_RyzenMaster.log

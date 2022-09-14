@@ -1,0 +1,24 @@
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05 (main ✗) $ pwd
+/workspaces/cli-basics-oscarlin05
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05 (main) $ mkdir CLIBasicsFolder
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05 (main) $ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05 (main) $ cd CLIBasicsFolder
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main) $ touch myfile.txt
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ echo Oscar ICS4Ub >> myfile.txt 
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ ls
+myfile.txt
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ cat myfile.txt
+Oscar ICS4Ub
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ cp myfile.txt myfile_copy.txt
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ ls
+myfile_copy.txt  myfile.txt
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ mv myfile_copy.txt myfile2.txt
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ mv myfile2.txt ..
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ ls ..
+CLIBasicsFolder  myfile2.txt  README.md  TerminalSession.txt
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05/CLIBasicsFolder (main ✗) $ cd ..
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05 (main ✗) $ rm -r myfile2.txt
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05 (main ✗) $ rm -r CLIBasicsFolder
+@oscarlin05 ➜ /workspaces/cli-basics-oscarlin05 (main) $ ls ..
+cli-basics-oscarlin05
